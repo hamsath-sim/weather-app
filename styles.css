@@ -92,17 +92,15 @@ body {
     justify-content: space-between;
     padding: 0 20px;
     margin-top: 50px;
+    flex-wrap: wrap; /* Allow wrapping */
 }
 
 .col {
     display: flex;
     align-items: center;
     text-align: left;
-}
-
-.col img {
-    width: 40px;
-    margin-right: 10px;
+    flex: 1 1 45%; /* Allow columns to take up 45% of the width */
+    margin-bottom: 20px; /* Add margin for spacing */
 }
 
 .humidity, .wind {
@@ -153,13 +151,12 @@ body {
     }
 
     .details {
-        flex-direction: column;
-        align-items: flex-start;
+        padding: 0 10px; /* Adjust padding */
     }
 
     .col {
-        margin-bottom: 20px;
-        width: 100%;
+        flex: 1 1 100%; /* Make columns full width on smaller screens */
+        margin-bottom: 10px; /* Adjust margin for spacing */
     }
 
     .humidity, .wind {
@@ -196,13 +193,12 @@ body {
     }
 
     .details {
-        flex-direction: column;
-        align-items: flex-start;
+        padding: 0 10px; /* Adjust padding */
     }
 
     .col {
-        margin-bottom: 20px;
-        width: 100%;
+        flex: 1 1 100%; /* Make columns full width on smaller screens */
+        margin-bottom: 10px; /* Adjust margin for spacing */
     }
 
     .humidity, .wind {
